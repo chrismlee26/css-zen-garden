@@ -1,0 +1,14 @@
+body {
+  font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #000;
+  font-size: 11px;
+  line-height: 15px;
+  background-color: #fff;
+  text-rendering: optimizeLegibility;
+}
+
+#zen-intro {
+  font: lighter normal 11.875rem/11.25rem "Favorit SSENSE Inter1";
+  letter-spacing: -0.5rem;
+}
