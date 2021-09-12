@@ -1,20 +1,30 @@
-body {
+/* Main Page */
+html {
+  background-color: #fafafa;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1200 800'%3E%3Cdefs%3E%3CradialGradient id='a' cx='0' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23fdfdfd'/%3E%3Cstop offset='1' stop-color='%23fdfdfd' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='1200' cy='800' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23e6e6e6'/%3E%3Cstop offset='1' stop-color='%23e6e6e6' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='c' cx='600' cy='0' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23e9e9e9'/%3E%3Cstop offset='1' stop-color='%23e9e9e9' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='d' cx='600' cy='800' r='600' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FAFAFA'/%3E%3Cstop offset='1' stop-color='%23FAFAFA' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='e' cx='0' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%23FFFFFF' stop-opacity='0'/%3E%3C/radialGradient%3E%3CradialGradient id='f' cx='1200' cy='0' r='800' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23D2D2D2'/%3E%3Cstop offset='1' stop-color='%23D2D2D2' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1200' height='800'/%3E%3Crect fill='url(%23b)' width='1200' height='800'/%3E%3Crect fill='url(%23c)' width='1200' height='800'/%3E%3Crect fill='url(%23d)' width='1200' height='800'/%3E%3Crect fill='url(%23e)' width='1200' height='800'/%3E%3Crect fill='url(%23f)' width='1200' height='800'/%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0% 20% 0% 20%;
+  display: flex;
+  justify-content: baseline;
+}
+
+/* Text Formatting */
+p {
   font: lighter normal 1.875rem/3.25rem "Favorit SSENSE Inter1";
   font-weight: 400;
   color: #000;
   font-size: 20px;
   line-height: 15px;
   letter-spacing: -0.05rem;
-  background-color: #fff;
   text-rendering: optimizeLegibility;
 }
 
 a {
   color: #222;
-  text-decoration: underline dotted;
+  text-decoration: underline;
   font-weight: 300;
   font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
 }
 
 h1 {
@@ -36,22 +46,70 @@ h3 {
   font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
   letter-spacing: -0.02rem;
 }
-/* 
-[banner] {
+
+.summary > p {
+  font-size: 2rem;
+  color: #222;
+  line-height: normal;
 }
 
-#zen-supporting {
-  color: red;
+/* Buttons in Intro */
+.intro > .summary > p > a {
+  display: inline-block;
+  padding: 0.2em;
+  margin: 0.1em;
+  border: 0.01em solid #999;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #222;
+  text-align: center;
+  transition: all 0.15s;
 }
 
-.sidebar > design-name {
-  font-family: "Times New Roman", Times, serif;
-} */
+.intro > .summary > p > a:hover {
+  color: #999;
+  border-color: #222;
+}
 
+.intro > .summary > p > a:active {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* Sidebar */
 .sidebar {
   color: #222;
-  text-decoration: underline dotted;
   font-weight: 300;
   font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer */
+
+[role="contentinfo"] {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+footer > a {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 100px, 0px;
 }
