@@ -86,30 +86,36 @@ h3 {
   font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   display: flex;
-  justify-content: center;
+  justify-content: left;
 }
 
-/* Footer */
-
+/* Card */
 [role="contentinfo"] {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
   display: flex;
   flex-direction: row;
+  padding: 50px;
 }
 
+/* Footer */
 footer {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  border-radius: 5px;
+  background-color: #555;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  position: fixed;
+  bottom: 0%;
 }
 
 footer > a {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  padding: 100px, 0px;
+  margin: 25px;
+  padding: 0px 100px 0px 100px;
+  color: white;
+}
+
+footer > a:hover {
+  margin: 25px;
+  color: black;
 }
