@@ -1,14 +1,57 @@
 body {
-  font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: lighter normal 1.875rem/3.25rem "Favorit SSENSE Inter1";
   font-weight: 400;
   color: #000;
-  font-size: 11px;
+  font-size: 20px;
   line-height: 15px;
+  letter-spacing: -0.05rem;
   background-color: #fff;
   text-rendering: optimizeLegibility;
 }
 
-#zen-intro {
-  font: lighter normal 11.875rem/11.25rem "Favorit SSENSE Inter1";
-  letter-spacing: -0.5rem;
+a {
+  color: #222;
+  text-decoration: underline dotted;
+  font-weight: 300;
+  font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  letter-spacing: -0.3rem;
+  color: #222;
+}
+
+h2 {
+  font-family: lighter normal 1.875rem/3.25rem "Favorit SSENSE Inter1";
+  font-weight: 800;
+  letter-spacing: -0.1rem;
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: -0.02rem;
+}
+/* 
+[banner] {
+}
+
+#zen-supporting {
+  color: red;
+}
+
+.sidebar > design-name {
+  font-family: "Times New Roman", Times, serif;
+} */
+
+.sidebar {
+  color: #222;
+  text-decoration: underline dotted;
+  font-weight: 300;
+  font-family: plain, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
 }
